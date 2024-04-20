@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Picture } from "astro:assets";
+import profileIcon from "../images/icon.webp";
+---
+
+<Layout>
+  <main>
+    <Picture src={profileIcon} formats={["avif", "webp"]} alt="" />
+    <h1>ikep</h1>
+    <p>Software Developer / CyberAgent</p>
+    <p>contact@ikep.dev</p>
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    height: 120px;
+    margin-bottom: 32px;
+    width: 120px;
+  }
+  h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  p {
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 4px;
+  }
+
+  @media screen and (min-width: 992px) {
+    img {
+      height: 140px;
+      margin-bottom: 40px;
+      width: 140px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+  }
+</style>

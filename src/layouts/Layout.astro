@@ -1,0 +1,29 @@
+---
+import "the-new-css-reset";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Hello Developer" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="none" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>My Profile</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family: system-ui, sans-serif;
+    background: #111315;
+  }
+  body {
+    display: grid;
+    min-height: 100dvh;
+    place-content: center;
+  }
+</style>
