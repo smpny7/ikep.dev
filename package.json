@@ -1,0 +1,26 @@
+{
+  "name": "ikep.dev",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.6",
+    "astro": "^5.18.0",
+    "sharp": "^0.34.5",
+    "the-new-css-reset": "^1.11.3",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "lodash": ">=4.17.23",
+      "rollup": ">=4.59.0",
+      "svgo": ">=4.0.1"
+    }
+  }
+}
